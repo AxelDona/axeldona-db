@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_youtube_video_youtube_videos",
+  "info": {
+    "displayName": "youtubeVideo",
+    "icon": "play",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "url": {
+      "type": "string"
+    },
+    "videoHeight": {
+      "type": "integer",
+      "default": 315
+    },
+    "videoWidth": {
+      "type": "integer",
+      "default": 560
+    }
+  }
+}

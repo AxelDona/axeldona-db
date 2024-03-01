@@ -1,0 +1,45 @@
+{
+  "kind": "collectionType",
+  "collectionName": "techs",
+  "info": {
+    "singularName": "tech",
+    "pluralName": "techs",
+    "displayName": "Tech",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "icon": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "projects": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::project.project",
+      "mappedBy": "techs"
+    },
+    "slug": {
+      "type": "uid"
+    },
+    "shortName": {
+      "type": "string"
+    },
+    "initials": {
+      "type": "string"
+    }
+  }
+}
